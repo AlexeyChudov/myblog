@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Python 3.10.10
+=======
+Python 3.10.10
+>>>>>>> origin/master
