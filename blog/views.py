@@ -64,3 +64,7 @@ class DelLike(View):
             return redirect(f'/{pk}')
         except:
             return redirect(f'/{pk}')
+
+class LogIn(View):
+    def get(self, request):
+        return render(request, 'registration/login.html', )
