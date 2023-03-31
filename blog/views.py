@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic.base import View
+from django.contrib.auth.forms import UserCreationForm
 from .models import Post, Likes
 from .form import CommentsForm
 
@@ -65,6 +66,6 @@ class DelLike(View):
         except:
             return redirect(f'/{pk}')
 
-class LogIn(View):
-    def get(self, request):
-        return render(request, 'registration/login.html', )
+
+
+

@@ -1,37 +1,8 @@
+{% extends 'blog/base.html' %}
 {% load static %}
-<html >
-<head>
-	<title>Мой блог</title>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
 
-	<link rel="shortcut icon" href="css/images/favicon.ico" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-<div class="shell">
-	<div class="border">
-
-		<div id="navigation">
-			<div class="menu-wrap">
-				<ul>
-			    	<li><a href="/" class="active">Главная</a></li>
-			    	<li><a href="/admin">Админ панель</a></li>
-				</ul>
-			</div>
-			<div class="auth-wrap">
-				<ul>
-					<li class="sign-in-btn"><a href="/accounts">Войти</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="main">
-			<div id="content" class="left">
-				
+{% block content %}
+    <div id="content" class="left">
 				<div class="projects">
 					<h3>Записи</h3>
 					{% for post in post_list  %}
@@ -49,16 +20,7 @@
 					{% endfor %}
 				</div>
 			</div>
-			
+
 			<div class="cl">&nbsp;</div>
 		</div>
-		
-
-	</div>
-	
-	<div id="footer">
-		<p class="copy right">Copyright &copy;  2023 </p>
-	</div>
-</div>
-</body>
-</html>
+{% endblock %}

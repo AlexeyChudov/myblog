@@ -147,3 +147,9 @@ width: 200px
     font-size: 18px;
     border-radius: 15px;
 }
+
+
+.alert {
+font-size: 20px;
+padding: 20px 0;
+}
