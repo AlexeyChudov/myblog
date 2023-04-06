@@ -1,0 +1,126 @@
+* {
+ margin: 0;
+ padding: 0;
+ outline:0;
+}
+
+body {
+font-size: 12px;
+line-height: 20px;
+font-family: 'Oswald', sans-serif;
+color: #333;
+background: url() repeat 0 0;
+}
+
+.main-wrap {
+width: 600px;
+height: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.content-wrap {
+padding: 30px 90px 75px 90px;
+border: 1px solid #e8e8e8;
+border-radius: 10px;
+background: #fff;
+position: relative;
+text-align: center;
+}
+
+.content-wrap div{
+display: flex;
+flex-direction: column;
+}
+
+h1 {
+margin-bottom: 30px;
+font-size: 35px;
+}
+
+label{
+font-size: 15px;
+padding: 10px 0;
+}
+
+input {
+height: 40px;
+width: 200px;
+border-radius: 10px;
+}
+
+.button {
+height: 40px;
+width: 200px;
+border-radius: 10px;
+background-color: #3ec928;
+color: #d8fcd2;
+border: none;
+margin-top: 20px;
+
+}
+.signup__link {
+font-size: .10rem;
+font-weight: 600;
+text-decoration: underline;
+color: #999;
+&:focus,
+&:hover {color: darken(#999, 13%);}
+}
+
+.form-control {
+background-color: transparent;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+border-radius: 0;
+&:focus {border-color: #111;}
+}
+
+.btn--form {
+padding: .5rem 2.5rem;
+font-size: .95rem;
+font-weight: 600;
+text-transform: uppercase;
+color: #fff;
+background: #111;
+border-radius: remy(35px);
+&:focus,
+&:hover {background: lighten(#111, 13%);}
+}
+
+.form-group {
+border: none;
+}
+
+
+.form-control {
+background-color: transparent;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+border-radius: 0;
+&:focus {border-color: #111;}
+}
+
+legend {
+font-size: 30px;
+margin-bottom: 30px;
+}
+
+.logout {
+font-size: 30px;
+margin-bottom: 30px;
+}
+
+h5 {
+font-size: 20px;
+}
+
+.container {
+margin: 0 auto;
+text-align: center;
+}
+
