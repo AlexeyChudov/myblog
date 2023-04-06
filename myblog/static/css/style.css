@@ -34,9 +34,30 @@ textarea { overflow:auto; }
 .border { border: 1px solid #e8e8e8; background: #fff; position: relative; }
 
 
-#navigation { height: 43px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; }
-#navigation ul { list-style: none; }
-#navigation ul li { float: left; height: 43px; border-right: 1px solid #dbdbdb; font-size: 12px; line-height: 43px; font-weight: bold; text-transform: uppercase; }
+#navigation {
+height: 43px;
+border-top: 1px solid #dbdbdb;
+border-bottom: 1px solid #dbdbdb;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+#navigation ul {
+display: flex;
+flex-direction: row;
+list-style: none;
+}
+#navigation ul li {
+display: flex;
+flex-direction: row;
+height: 43px;
+border: 1px solid #dbdbdb;
+border-radius: 3px;
+font-size: 12px; line-height: 43px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
 #navigation ul li a { float: left; height: 43px; color: #000; padding: 0 33px; }
 #navigation ul li a:hover, 
 #navigation ul li a.active { color: #ff0000; text-decoration: none; }
@@ -125,4 +146,10 @@ width: 200px
     margin: 10px;
     font-size: 18px;
     border-radius: 15px;
+}
+
+
+.alert {
+font-size: 20px;
+padding: 20px 0;
 }
